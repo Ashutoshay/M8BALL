@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Ball</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.main{
+			width: 100%;
+			height: 100vh;
+			background-color: white;
+			text-align: center;
+			position: relative;
+		}
+		#child1{
+			width: 50%;
+			height: 80vh;
+			background-color: white;
+			position: absolute;
+			left: 23%;
+			margin-top: 2vh;
+			padding: 20px;
+			border-left: 5px solid #ff6666;
+			border-right: 5px solid #ff6666;
+		}
+		#child1 label{
+			font-size: 25px;
+			padding: 20px;
+		}
+		#child1 input{
+			height: 25px;
+			border-radius: 5px;
+			border:none;
+			border-bottom: 2px solid #ff6666;
+			outline: none;
+		}
+		h1{
+			font-size: 50px;
+			background: -webkit-linear-gradient(#ff6666, #404040);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+			letter-spacing: 5px;
+			font-weight: 700;
+		}
+		#child1 em{
+			font-size: 60px;
+			letter-spacing: 5px;
+			
+			color: black;
+			font-style: normal;
+		}
+	#child1	i{
+			/*color: black;*/
+			font-size: 100px;
+			
+			background: -webkit-linear-gradient(#ff6666, #404040);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+		}
+		#child1 button{
+			margin-top: 10px;
+			height: 40px;
+			width: 200px;
+			/*background-image: linear-gradient(#ff6666, #4dffdb);*/
+			background-color: black;
+			border:none;
+			outline: none;
+			border-radius: 5px;
+			cursor: pointer;
+			color: white;
+			font-size: 25px;
+		}
+		
+		#for2{
+			display: none;
+		}
+		#para{
+			font-size: 25px;
+			color: gray;
+		}
+		#for3{
+			display: none;
+		}
+	</style>
+	
+</head>
+<body>
+  <div class="main">
+  	<div id="child1">
+  		<i class="fa fa-firefox" aria-hidden="true"></i>
+  		<h1><a href="index.html">M<em>8</em>Ball</a></h1><span>(Play Again click Logo)</span>
+  		<h3>(Find Your Future here)</h3>
+  		<form onsubmit="event.preventDefault()" id="for">
+  			<label>Your Good Name: </label>
+  			<input type="text" name="" id="name"><br>
+  			<button onclick="fun()">Soft Click</button>
+  			<!-- <h1>OR</h1>
+  			<p>(Find your Lucky number to click below)</p>
+  			<button onclick="fun()">Soft Click</button> -->
+  		</form>
+  		
+ <form onsubmit="event.preventDefault()" id="for2">
+  			<h1 id="n1"></h1>
+  			<p style="font-size: 18px;">Do you want to play</p>
+  			<label>Yes</label>
+		<input type="radio" name="no1" id="yes" style="width: 20px;"  value="Yes" onclick="yes1()">
+		<label>No</label>
+		<input type="radio" name="no1" id="no"  style="width: 20px;" value="No" onclick="yes1()">
+	</form>
+	<form onsubmit="event.preventDefault()" id="for3">
+		<h1 id="n2"></h1>
+  		<label for="ques">Choose a Question:</label>
+  			<select id="ques" name="ques">
+   
+					<option>"Will I see clear without specs ?"</option>
+					<option>"Will I get SUKOON in life anytime soon ?"</option>
+					<option>"Will I get married ?"</option>
+					<option>"Will my laptop support RED Dead redumption ?"</option>
+					<option>"Will I get married ?"</option>
+					<option>"Will I get promoted ?"</option>
+					<option>"If my foe lies within my circle ?"</option>
+
+  			</select>
+  			<p id="para"></p>
+  			<!-- <input type="button" name="" style="width: 100px;height: 40px;" value="Lucky Number" onclick="num()">
+  			<input type="text" name="" id="numm"> -->
+  <button onclick="gun()">Soft Click</button>
+</form>
+<p id="show"></p>
+  	</div>
+  	
+  </div>
+  <script src="magic.js">
+  </script>
+
+
+
+</body>
+</html>
